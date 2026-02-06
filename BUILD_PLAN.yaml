@@ -1,0 +1,5 @@
+# BUILD_PLAN.yaml
+goal: Run the Claritiy Website locally.
+steps:
+  - install_dependencies
+  - run_dev_server
