@@ -1,5 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Navigation } from './components/Navigation';
+import { Templates } from './pages/Templates';
+import { Login } from './pages/Login';
+import { Signup } from './pages/Signup';
+import { Success } from './pages/Success';
 import { Footer } from './components/Footer';
 import { ScrollProgress } from './components/ScrollProgress';
 import { FloatingContact } from './components/FloatingContact';
@@ -23,6 +27,10 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/products" element={<Products />} />
+            <Route path="/templates" element={<Templates />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/success" element={<Success />} />
             <Route path="/demos" element={<Demos />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>

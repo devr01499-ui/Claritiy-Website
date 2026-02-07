@@ -1,0 +1,16 @@
+{
+    "name": "Customer Support Bot",
+    "version": "1.0.0",
+    "description": "Ready to use support bot workflow for WhatsApp.",
+    "nodes": [
+        {
+            "type": "trigger",
+            "event": "message_received"
+        },
+        {
+            "type": "action",
+            "action": "send_reply",
+            "text": "Hello! How can I help you today?"
+        }
+    ]
+}

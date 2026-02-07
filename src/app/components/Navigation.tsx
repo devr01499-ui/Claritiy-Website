@@ -11,6 +11,7 @@ export function Navigation() {
     { path: '/', label: 'Home' },
     { path: '/about', label: 'About Us' },
     { path: '/products', label: 'Products' },
+    { path: '/templates', label: 'Templates' },
     { path: '/demos', label: 'Demos' },
     { path: '/contact', label: 'Contact Us' },
   ];
@@ -54,6 +55,11 @@ export function Navigation() {
                 )}
               </Link>
             ))}
+            <Link to="/login">
+              <button className="text-gray-700 font-medium hover:text-orange-600 transition-colors">
+                Log In
+              </button>
+            </Link>
             <Link to="/contact">
               <motion.button
                 whileHover={{ scale: 1.05 }}

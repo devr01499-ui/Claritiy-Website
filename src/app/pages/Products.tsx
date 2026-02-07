@@ -32,19 +32,34 @@ export function Products() {
       pricing: 'Starting at $99/month',
     },
     {
-      icon: Workflow,
-      name: 'Workflow Automation',
+      icon: Zap,
+      name: 'AI Automation Workflows',
       category: 'automation',
       tagline: 'Streamline your operations',
       description:
-        'Build sophisticated automation workflows with our visual builder. Connect apps, trigger actions, and automate repetitive tasks across your entire tech stack.',
+        'Build and deploy sophisticated AI automation workflows. Use our ready-to-run templates to automate repetitive tasks across your entire enterprise.',
       features: [
-        'Drag-and-drop builder',
-        '500+ integrations',
-        'Conditional logic',
+        'Ready-to-use JSON templates',
+        'One-click deployment',
+        'Custom workflow builder',
         'Real-time monitoring',
       ],
       pricing: 'Starting at $149/month',
+    },
+    {
+      icon: Bot,
+      name: 'AI Chatbots',
+      category: 'automation',
+      tagline: 'Omnichannel Engagement',
+      description:
+        'Intelligent AI chatbots for any platform. Integrate seamlessly with WhatsApp, Telegram, Website, and more to provide instant support.',
+      features: [
+        'WhatsApp Integration',
+        'Multi-platform support',
+        '24/7 Instant response',
+        'Lead qualification',
+      ],
+      pricing: 'Starting at $79/month',
     },
     {
       icon: Brain,
@@ -52,14 +67,14 @@ export function Products() {
       category: 'ai-models',
       tagline: 'Train AI on your data',
       description:
-        'Create custom machine learning models trained on your specific business data. From predictive analytics to natural language processing.',
+        'We create and train bespoke AI models tailored to your company requirements. From predictive analytics to specialized LLMs.',
       features: [
-        'No-code model training',
-        'Auto-optimization',
-        'Real-time predictions',
-        'API access',
+        'Bespoke model training',
+        'Custom data ingestion',
+        'Company-specific logic',
+        'High accuracy tuning',
       ],
-      pricing: 'Starting at $299/month',
+      pricing: 'Custom Quote',
     },
     {
       icon: Database,
@@ -168,8 +183,8 @@ export function Products() {
                 key={category.id}
                 onClick={() => setActiveTab(category.id)}
                 className={`px-6 py-2 rounded-full font-medium transition-all ${activeTab === category.id
-                    ? 'bg-gradient-to-r from-orange-500 to-pink-500 text-white shadow-lg'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  ? 'bg-gradient-to-r from-orange-500 to-pink-500 text-white shadow-lg'
+                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                   }`}
               >
                 {category.label}
